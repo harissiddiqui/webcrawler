@@ -1,0 +1,21 @@
+<html>
+
+<head>
+    <link rel="stylesheet" href="./css/list.css" />
+</head>
+
+<body style="background-color: black">
+    {{#each products}}
+    <h1><a href="{{this.link}}">{{this.source}}</a></h1>
+    <ul>
+
+        {{#each this.items}}
+        <li><a style="color:red;" target="_blank" href="https://www.indeed.com{{this.link}}"> {{this.title}} - {{this.company}} - {{this.location}} - {{this.date}}</a></li>
+        <br> {{/each}}
+
+    </ul>
+
+    {{/each}}
+</body>
+
+</html>
