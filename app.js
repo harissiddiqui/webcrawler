@@ -43,6 +43,8 @@ var products2 = [];
 var products3 = [];
 var products4 = [];
 var products5 = [];
+var products6 = [];
+var products7 = [];
 
 // Page 1
 request(
@@ -84,11 +86,11 @@ app.get("/", function(req, res) {
 });
 
 //Page 2
-request("https://www.indeed.com.pk/jobs-jobs", function(err, res, body) {
+request("https://www.indeed.com.pk/jobs?q=jobs&start=30&pp=AB4AAAFdhEMcaAAAAAEVxT0aAQEBBwHg5jXs-RCwfggY_0CRySgsCpP9p_dJzKbfmB4IYiy26dIIzjBPTWz_WPW9Y6LmQNxpc1Zm25ju2yS1Qowt", function(err, res, body) {
   var $ = cheerio.load(body);
   var productcolxn1 = {
     source: "Indeed",
-    link: "https://www.indeed.com.pk/jobs-jobs",
+    link: "https://www.indeed.com.pk/jobs?q=jobs&start=30&pp=AB4AAAFdhEMcaAAAAAEVxT0aAQEBBwHg5jXs-RCwfggY_0CRySgsCpP9p_dJzKbfmB4IYiy26dIIzjBPTWz_WPW9Y6LmQNxpc1Zm25ju2yS1Qowt",
     items: []
   };
 
@@ -119,11 +121,11 @@ app.get("/1", function(req, res) {
 });
 
 //Page 3
-request("https://www.indeed.com.pk/jobs?q=jobs&start=30&pp=AB4AAAFdhEMcaAAAAAEVxT0aAQEBBwHg5jXs-RCwfggY_0CRySgsCpP9p_dJzKbfmB4IYiy26dIIzjBPTWz_WPW9Y6LmQNxpc1Zm25ju2yS1Qowt", function(err, res, body) {
+request("https://www.indeed.com.pk/jobs-jobs", function(err, res, body) {
   var $ = cheerio.load(body);
   var productcolxn2 = {
     source: "Indeed",
-    link: "https://www.indeed.com.pk/jobs?q=jobs&start=30&pp=AB4AAAFdhEMcaAAAAAEVxT0aAQEBBwHg5jXs-RCwfggY_0CRySgsCpP9p_dJzKbfmB4IYiy26dIIzjBPTWz_WPW9Y6LmQNxpc1Zm25ju2yS1Qowt",
+    link: "https://www.indeed.com.pk/jobs-jobs",
     items: []
   };
 

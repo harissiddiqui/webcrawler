@@ -1,0 +1,94 @@
+<html>
+<title rel="shortcut icon" href="public/icon.ico"> Job Board</title>
+<head>
+
+    
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.6/css/bootstrap.min.css" integrity="sha384-rwoIResjU2yc3z8GV/NPeZWAv56rSmLldC3R/AZzGRnGxQQKnKkoFVhFQhNUwEyJ"
+        crossorigin="anonymous">
+    <script src="https://code.jquery.com/jquery-3.1.1.slim.min.js" integrity="sha384-A7FZj7v+d/sdmMqp/nOQwliLvUsJfDHW+k9Omg/a/EheAdgtzNs3hpfag6Ed950n"
+        crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/tether/1.4.0/js/tether.min.js" integrity="sha384-DztdAPBWPRXSA/3eYEEUWrWCy7G5KFbe8fFjk5JAIxUYHKkDx6Qin1DkWx51bBrb"
+        crossorigin="anonymous"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.6/js/bootstrap.min.js" integrity="sha384-vBWWzlZJ8ea9aCX4pEW3rVHjgjt7zpkNpZk+02D9phzyeVkE+jo0ieGizqPLForn"
+        crossorigin="anonymous"></script>
+
+
+    
+</head>
+<style>
+    .div1 {
+        width: 600px;
+        height: 120px;
+        border: 3px solid cornflowerblue;
+    }
+
+    ul {
+        list-style-type: none;
+    }
+
+    body {
+
+        background-color: white;
+    }
+    @font-face {
+   font-family: myFirstFont;
+   src: url(sansation_light.woff);
+}
+
+div {
+   font-family: myFirstFont;
+}
+
+
+
+</style>
+
+<!-- {{#each products}}
+    <h1><a href="{{this.link}}">{{this.source}}</a></h1> -->
+<header class="w3-container w3-blue">
+    
+        <h1 style="font-family:Sansation Light">
+           <center>Job Board- By Go Resume</center>
+        </h1>
+        <h3 style="font-family:Sansation Light">
+            <center>Bringing you the latest jobs that you might find suitable</center>
+        </h3>
+    </header>
+
+    <a class="btn btn-success navbar-btn" style="font-family:Sansation Light"
+                            role="button" href="https://harissiddiqui.github.io/goresume/" target="_blank" />Home</a>
+           <a class="btn btn-primary" style="font-family:Sansation Light"
+                            role="button" href="https://harissiddiqui.github.io/goresume/" target="_blank" />Create Resume</a>
+<body background="img.jpg">
+    <br/>
+    <br/>
+    <ul>
+        {{#each this.items}}
+        <div class="row">
+            <div class="col-sm-3"></div>
+
+            <div class="col-sm-4">
+                <div class="div1">
+                    <li style="font-size: 20px"><a target="_blank" href="https://www.rozee.pk/{{this.link}}"> <strong>     {{this.title}}    </strong></a>
+                        <li style="font-size: 18px"><a target="_blank" href="https://www.rozee.pk/{{this.link}}"><strong>At         </strong>    {{this.company}}  </a></li>
+                        <li style="font-size: 14px"><strong>In         </strong> {{this.location}}</li>
+                        <li style="font-size: 14px"><strong>Dated      </strong> {{this.date}} </</li>
+                            {{!--
+                            <li><a target="_blank" href="https://www.indeed.com{{this.link}}"><strong>At         </strong>    {{this.company}}  </a></li>
+                            <li><a target="_blank" href="https://www.indeed.com{{this.link}}"><strong>In         </strong>    {{this.location}} </a></li>
+                            <li><a target="_blank" href="https://www.indeed.com{{this.link}}"><strong>Dated      </strong>    {{this.date}}     </a></li>
+                            --}}
+                </div>
+            </div>
+        </div>
+
+        <br> {{/each}}
+
+    </ul>
+
+    {{/each}}
+</body>
+
+</html>

@@ -17,12 +17,14 @@
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.6/js/bootstrap.min.js" integrity="sha384-vBWWzlZJ8ea9aCX4pEW3rVHjgjt7zpkNpZk+02D9phzyeVkE+jo0ieGizqPLForn"
         crossorigin="anonymous"></script>
         
-        
 
 
     
 </head>
 <style>
+    .site-footer {
+  background: #dddbdb;
+}
     .div1 {
         width: 600px;
         height: 120px;
@@ -48,14 +50,11 @@ div {
 
 .center {
     margin: auto;
-    width: 18%;
+    width:18%;
     
     padding: 2px;
 }
 
-.site-footer {
-  background: lightgray;
-}
 
 </style>
 <div id="status"></div>
@@ -75,17 +74,23 @@ div {
       
       
         </div> 
-    </nav><hr> 
-    <a href="http://localhost:3001"><center><h4> Explore Jobs at Rozee.pk</h4><center></a>
+        
+    </nav><hr>
+        <a href="http://localhost:3000"><center><h4> Explore Jobs at Indeed.com.pk</h4><center></a> 
+         {{!--<div class="alert alert-info" role="alert" href="http://localhost:3000">
+   Explore Jobs at <strong>Indeed.com.pk.</strong>
+</div>--}}
     <nav aria-label="Page navigation example" class="center">
+        
   <ul class="pagination">
-    <li class="page-item"><a class="page-link">Indeed</a></li>
-    <li class="page-item"><a class="page-link" href="http://localhost:3000">1</a></li>
-    <li class="page-item"><a class="page-link" href="http://localhost:3000/1">2</a></li>
-    <li class="page-item"><a class="page-link" href="http://localhost:3000/2">3</a></li>
-    <li class="page-item"><a class="page-link" href="http://localhost:3000/3">4</a></li>
-    <li class="page-item"><a class="page-link" href="http://localhost:3000/4">5</a></li>
+    <li class="page-item"><a class="page-link">Rozee.pk</a></li>
+    <li class="page-item"><a class="page-link" href="http://localhost:3001/">1</a></li>
+    <li class="page-item"><a class="page-link" href="http://localhost:3001/R1">2</a></li>
+    <li class="page-item"><a class="page-link" href="http://localhost:3001/R2">3</a></li>
+    <li class="page-item"><a class="page-link" href="http://localhost:3001/R3">4</a></li>
+    <li class="page-item"><a class="page-link" href="http://localhost:3001/R4">5</a></li>
   </ul>
+  
 </nav>
     
 <!-- {{#each products}}
@@ -114,8 +119,8 @@ div {
 
             <div class="col-sm-4">
                 <div class="div1">
-                    <li style="font-size: 20px"><a target="_blank" href="https://www.indeed.com{{this.link}}"> <strong>     {{this.title}}    </strong></a>
-                        <li style="font-size: 18px"><a target="_blank" href="https://www.indeed.com{{this.link}}"><strong>At         </strong>    {{this.company}}  </a></li>
+                    <li style="font-size: 20px"><a target="_blank" href="https://www.rozee.pk/{{this.link}}"> <strong>     {{this.title}}    </strong></a>
+                        <li style="font-size: 18px"><a target="_blank" href="https://www.rozee.pk/{{this.link}}"><strong>At         </strong>    {{this.company}}  </a></li>
                         <li style="font-size: 14px"><strong>In         </strong> {{this.location}}</li>
                         <li style="font-size: 14px"><strong>Dated      </strong> {{this.date}} </</li>
                             {{!--
