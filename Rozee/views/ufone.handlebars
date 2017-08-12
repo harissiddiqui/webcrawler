@@ -76,46 +76,24 @@ div {
       
         </div> 
     </nav><hr> 
-    <a href="http://localhost:3000"><center><h4> Explore Jobs at Indeed.com.pk</h4><center></a><hr>
-    <div class="btn-group">
-      <button type="button" class="btn btn-primary dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-    Cities <span class="caret"></span>
-  </button>
-  <ul class="dropdown-menu"> 
-    <li><a class="page-link" href="http://localhost:3001/islamabad">Islamabad</a></li>
-    <li><a class="page-link" href="http://localhost:3001/rawalpindi">Rawalpindi</a></li>
-    <li><a class="page-link" href="http://localhost:3001/karachi">Karachi</a></li>
-    <li><a class="page-link" href="http://localhost:3001/lahore">Lahore</a></li>
-    <li><a class="page-link" href="http://localhost:3001/peshawar">Peshawar</a></li>
-    <li><a class="page-link" href="http://localhost:3001/sialkot">Sialkot</a></li>
-    <li><a class="page-link" href="http://localhost:3001/faisalabad">Faisalabad</a></li>
+    <a href="http://localhost:3001"><center><h4> Explore Jobs at Rozee.pk</h4><center></a>
+    
+  <ul class="pagination">
+    <li class="page-item"><a class="page-link">Categories</a></li>
+    <li class="page-item"><a class="page-link" href="http://localhost:3000">IT</a></li>
+    <li class="page-item"><a class="page-link" href="http://localhost:3000/1">Engineering</a></li>
+    <li class="page-item"><a class="page-link" href="http://localhost:3000/2">Pilot</a></li>
+    <li class="page-item"><a class="page-link" href="http://localhost:3000/3">Sailor</a></li>
+    <li class="page-item"><a class="page-link" href="http://localhost:3000/4">Racer</a></li>
   </ul>
-  </div>
-  <div class="btn-group">
-      <button type="button" class="btn btn-success dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-    Categories <span class="caret"></span>
-  </button>
-  
-  <ul class="dropdown-menu"> 
-    <li><a class="page-link" href="http://localhost:3001/accountant">Accountant</a></li>
-    <li><a class="page-link" href="http://localhost:3001/business-development-executive">Business Development Executive</a></li>
-    <li><a class="page-link" href="http://localhost:3001/content-writer">Content Writer</a></li>
-    <li><a class="page-link" href="http://localhost:3001/developer">Developer</a></li>
-    <li><a class="page-link" href="http://localhost:3001/graphic-designer">Graphic Designer</a></li>
-    <li><a class="page-link" href="http://localhost:3001/human-resource-manager">Human Resource Manager</a></li>
-    <li><a class="page-link" href="http://localhost:3001/marketing-executive">Marketing Executive</a></li>
-    <li><a class="page-link" href="http://localhost:3001/project-manager">Project Manager</a></li>
-  </ul>
-  </div>
-  <hr>
     <nav aria-label="Page navigation example" class="center">
   <ul class="pagination">
-    <li class="page-item"><a class="page-link">General</a></li>
-    <li class="page-item"><a class="page-link" href="http://localhost:3001">1</a></li>
-    <li class="page-item"><a class="page-link" href="http://localhost:3001/R1">2</a></li>
-    <li class="page-item"><a class="page-link" href="http://localhost:3001/R2">3</a></li>
-    <li class="page-item"><a class="page-link" href="http://localhost:3001/R3">4</a></li>
-    <li class="page-item"><a class="page-link" href="http://localhost:3001/R4">5</a></li>
+    <li class="page-item"><a class="page-link">Indeed</a></li>
+    <li class="page-item"><a class="page-link" href="http://localhost:3000">1</a></li>
+    <li class="page-item"><a class="page-link" href="http://localhost:3000/1">2</a></li>
+    <li class="page-item"><a class="page-link" href="http://localhost:3000/2">3</a></li>
+    <li class="page-item"><a class="page-link" href="http://localhost:3000/3">4</a></li>
+    <li class="page-item"><a class="page-link" href="http://localhost:3000/4">5</a></li>
   </ul>
 </nav>
     
@@ -145,10 +123,10 @@ div {
 
             <div class="col-sm-4">
                 <div class="div1">
-                    <li style="font-size: 20px"><a target="_blank" href="https://www.rozee.pk{{this.link}}"> <strong>     {{this.title}}    </strong></a>
-                        {{!--<li style="font-size: 18px"><a target="_blank" href="https://www.rozee.pk{{this.link}}">At            <strong> {{this.company}}</strong>  </a></li>--}}
-                        {{!--<li style="font-size: 14px"><strong>In         </strong> {{this.location}}</li>--}}
-                        <li style="font-size: 14px"><strong><hr>      </strong> {{this.date}} </</li>
+                    <li style="font-size: 20px"><a target="_blank" href="https://www.indeed.com{{this.link}}"> <strong>     {{this.title}}    </strong></a>
+                        <li style="font-size: 18px"><a target="_blank" href="https://www.indeed.com{{this.link}}">At            <strong> {{this.company}}</strong>  </a></li>
+                        <li style="font-size: 14px"><strong>In         </strong> {{this.location}}</li>
+                        <li style="font-size: 14px"><strong>Dated      </strong> {{this.date}} </</li>
                             {{!--
                             <li><a target="_blank" href="https://www.indeed.com{{this.link}}"><strong>At         </strong>    {{this.company}}  </a></li>
                             <li><a target="_blank" href="https://www.indeed.com{{this.link}}"><strong>In         </strong>    {{this.location}} </a></li>
